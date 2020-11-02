@@ -10,7 +10,9 @@ export default function manifest(node) {
 	for (let name in data) {
 		let value = data[name]
 		element[name] = value
-		element.setAttribute(name, value)
+		if (typeof value !== "function") {
+			element.setAttribute(name, value)
+		}
 	}
 	for (let i = 0; i < content.length; i++) {
 		let child = manifest(content[i])

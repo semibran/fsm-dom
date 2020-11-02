@@ -8,12 +8,12 @@
   "main": "src/index.js",
   "keywords": [],
   "devDependencies": {
-    "autoprefixer": "*",
-    "chokidar-cli": "*",
-    "clean-css-cli": "*",
-    "esbuild": "*",
-    "html-minifier": "*",
-    "postcss": "*",
-    "postcss-cli": "*"
+    "autoprefixer": "^10.0.1",
+    "chokidar-cli": "^2.1.0",
+    "clean-css-cli": "^4.3.0",
+    "esbuild": "^0.8.2",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.1.4",
+    "postcss-cli": "^8.2.0"
   }
 }

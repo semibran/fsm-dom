@@ -7,5 +7,5 @@ To get started, fork this repository and enter the following commands.
 > scaffy     # replace template tags
 > pkg-bump   # update package.json dep versions
 > npm i      # install deps
-> make watch # watch files; requires make 3.8.2+
+> make watch # watch files (requires make 3.8.2+)
 ```

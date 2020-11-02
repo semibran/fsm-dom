@@ -27,11 +27,11 @@ const select = (state, actions) =>
 			]),
 			li({ class: "menu-map-item" }, [
 				span({ class: "menu-map-name" }, "Map 2"),
-				div({ class: "menu-map" })
+				div({ class: "menu-map -disabled" })
 			]),
 			li({ class: "menu-map-item" }, [
 				span({ class: "menu-map-name" }, "Map 3"),
-				div({ class: "menu-map" })
+				div({ class: "menu-map -disabled" })
 			])
 		]),
 		button({ class: "menu-button -back", onclick: actions.reroute(home) }, "Back")

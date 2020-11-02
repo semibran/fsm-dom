@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+ul {
+	list-style: none;
+}
+
 body {
 	background: #eee;
 	font-family: sans-serif;
@@ -16,9 +20,9 @@ body {
 }
 
 .menu-title {
-	font-size: 1.25em;
+	font-size: 2em;
 	font-weight: bold;
-	margin-bottom: 12px;
+	margin-bottom: 32px;
 }
 
 .menu-buttons {
@@ -55,10 +59,29 @@ body {
 	margin: 8px;
 }
 
+.menu-map-list {
+	margin: 0 8%;
+}
+
+.menu-map-item {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 16px;
+}
+
+.menu-map-name {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
 .menu-map {
-	width: 288px;
-	height: 288px;
+	width: 100%;
 	background: silver;
-	margin: 0 auto;
-	margin-bottom: 8px;
+}
+
+.menu-map::before {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }

@@ -1,11 +1,9 @@
-import routes from "./routes"
+import { home } from "./routes"
 import manifest from "./lib/manifest"
 
-let state = {
-	route: "/"
-}
+let state = { route: home }
 
-let tree = routes[state.route]
+let tree = state.route()
 console.log(tree)
 
 let el = manifest(tree)

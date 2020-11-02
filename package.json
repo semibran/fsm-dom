@@ -1,0 +1,19 @@
+{
+  "name": "{{project.id}}",
+  "version": "0.0.0",
+  "description": "{{project.description}}",
+  "repository": "{{author.username}}/{{project.id}}",
+  "author": "{{author.username}}",
+  "license": "MIT",
+  "main": "src/index.js",
+  "keywords": [],
+  "devDependencies": {
+    "autoprefixer": "*",
+    "chokidar-cli": "*",
+    "clean-css-cli": "*",
+    "esbuild": "*",
+    "html-minifier": "*",
+    "postcss": "*",
+    "postcss-cli": "*"
+  }
+}

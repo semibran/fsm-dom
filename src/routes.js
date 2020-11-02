@@ -1,6 +1,6 @@
 import { main, header, div, ul, li, p, span, button } from "./lib/vdom"
 
-export { home, select, option }
+export { home, select, option, game }
 
 const home = (state, actions) =>
 	main({ class: "page -home" }, [
@@ -23,7 +23,7 @@ const select = (state, actions) =>
 		ul({ class: "menu-map-list" }, [
 			li({ class: "menu-map-item" }, [
 				span({ class: "menu-map-name" }, "Map 1"),
-				div({ class: "menu-map" })
+				div({ class: "menu-map", onclick: actions.reroute(game) })
 			]),
 			li({ class: "menu-map-item" }, [
 				span({ class: "menu-map-name" }, "Map 2"),
@@ -44,3 +44,6 @@ const option = (state, actions) =>
 		]),
 		button({ class: "menu-button -back", onclick: actions.reroute(home) }, "Back")
 	])
+
+const game = (state, actions) =>
+	main({ class: "page -game" })

@@ -40,9 +40,8 @@ export default function patch(el, node) {
 	// if they are missing from new element
 	// TODO: determine if there's a faster way
 	//   to find which elements were removed
-	for (let i = node.content.length; i < content.length; i++) {
-		let child = content[i]
-		el.removeChild(child)
+	while (content.length > node.content.length) {
+		el.removeChild(content[content.length - 1])
 	}
 
 	// patch remaining children

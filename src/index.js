@@ -6,6 +6,7 @@ let state = { route: home }
 let actions = {
 	reroute: route => _ => {
 		let tree = route(state, actions)
+		console.log(route.name, ...tree.content)
 		patch(view, tree)
 		state.route = route
 	}

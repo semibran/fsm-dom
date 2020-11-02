@@ -1,5 +1,5 @@
-# {{project.id}}
-> {{project.description}}
+# fsm-dom
+> finite state machine sandbox for dom tests
 
 ## development
 To get started, fork this repository and enter the following commands.

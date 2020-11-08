@@ -1,5 +1,7 @@
 import manifest from "./manifest"
 
+// patch(Element, vnode)
+// Updates an existing DOM element to match the given vnode.
 export default function patch(el, node) {
 	let tag = el.tagName
 	let data = el.attributes
@@ -44,6 +46,14 @@ export default function patch(el, node) {
 		el.removeChild(content[content.length - 1])
 	}
 
+	// ignore whitespace
+	for (let i = 0; i < content.length; i++) {
+		let child = content[i]
+		if (child instanceof Text && !child.data.trim()) {
+			el.removeChild(child)
+		}
+	}
+
 	// patch remaining children
 	for (let i = 0; i < node.content.length; i++) {
 		let child = content[i]
@@ -59,6 +69,4 @@ export default function patch(el, node) {
 			child.data = newchild
 		}
 	}
-
-	return el
 }

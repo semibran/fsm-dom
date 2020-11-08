@@ -8,8 +8,20 @@ ul {
 	list-style: none;
 }
 
+.button {
+	background: black;
+	color: white;
+	font-weight: bold;
+	padding: 12px 16px;
+	border: none;
+	border-radius: 8px;
+}
+
+.button:not(:last-child) {
+	margin-bottom: 4px;
+}
+
 body {
-	background: #eee;
 	font-family: sans-serif;
 }
 
@@ -46,13 +58,7 @@ body {
 .menu-button {
 	display: block;
 	width: 192px;
-	background: black;
-	color: white;
-	font-weight: bold;
 	font-size: 1.5em;
-	padding: 12px 16px;
-	border: none;
-	border-radius: 8px;
 }
 
 .menu-button:not(:last-child) {
@@ -119,4 +125,26 @@ body {
 	background: silver;
 	color: gray;
 	border: thin solid gray;
+}
+
+.button.-pause {
+	background: black;
+	color: white;
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 8px;
+}
+
+.modal {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
+.modal-button {
+	width: 160px;
+	display: block;
 }
